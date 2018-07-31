@@ -35,6 +35,7 @@ def err_on_zero_or_null_check(result, func, args):
 
 def quick_win_define(name, output, *args, **kwargs):
     dllname, fname = name.split('.')
+    print(dllname,fname)
     params = kwargs.get('params', None)
     if params:
         params = tuple([(x, ) for x in params])
